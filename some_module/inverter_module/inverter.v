@@ -3,6 +3,6 @@ module inverter(
     output a_invert
 );
 
-    assign a_invert = invert;
+    assign a_invert = ~a;
 
 endmodule
