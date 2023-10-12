@@ -1,2 +1,3 @@
 做Block diagram時要記得幫clk_wiz_0的CLK_IN1_D用make port
 幫Block diagram做Create HDL Wrapper後再新增XDC檔
+只要沒有PS則PYNQ會報錯
