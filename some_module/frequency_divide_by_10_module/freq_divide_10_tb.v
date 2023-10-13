@@ -25,7 +25,7 @@ module freq_div_10_tb();
         // Apply reset after a delay of 100 time units
         #100 reset = 1;
 
-        #3000;  // Wait for additional 2000 time units
+        #500;  // Wait for additional 500 time units
 
         // Finish simulation
         $finish;  // Terminate the simulation
@@ -33,7 +33,7 @@ module freq_div_10_tb();
 
     // Clock generation
     always begin
-        #25 clk = ~clk;  // Toggle the clock signal every 25 time units
+        #1 clk = ~clk;  // Toggle the clock signal every 1 time units
     end
 
 endmodule

@@ -10,8 +10,7 @@ module freq_div_10000000(
         // If 'reset' is active (low), reset the counter to zero.
         if (!reset)
             counter24 <= 24'b0;
-        // If the counter reaches 9999999, reset it to zero.
-        // else if (counter24 == 24'd9999999)
+        // If the counter reaches 4999999, reset it to zero.
         else if (counter24 == 24'd4999999)
             counter24 <= 24'b0;
         // If none of the above conditions are met, increment the counter by 1.
@@ -24,8 +23,7 @@ module freq_div_10000000(
         // If 'reset' is active (low), the output signal 'clt_div_10000000' follows the 'clk' input.
         if (!reset)
             clk_div_10000000 <= 1'b0;
-        // If the counter reaches 9999999, toggle the output signal 'clt_div_10000000'.
-        // else if (counter24 == 24'd9999999)
+        // If the counter reaches 4999999, toggle the output signal 'clt_div_10000000'.
         else if (counter24 == 24'd4999999)
             clk_div_10000000 <= ~clk_div_10000000;
         // If none of the above conditions are met, the output signal 'clt_div_10000000' follows the 'clk' input.
