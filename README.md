@@ -13,14 +13,15 @@ some_module新增了除以10的7次的除頻器
 修正了除以10的除頻器.v檔的counter4錯誤  
   
 # 2023/10/14  
-**Test_1** 
+**Test_1**  
 clk_in1改用Auto連接連  
 測試clk直接接10Mhz的clk_wiz0  
 Error_1: 把BD刪除後先添加.v檔再創BD    
-**Test_2** 
+**Test_2**  
 Test_1的BD加上除以10的7次的除頻器  
-**Test_3** 
+**Test_3**  
 clk_wiz0的reset改用Push Button給  
 dip_switch只是為了加PS用的不會用到  
-**Test_4** 
-Test_3的BD加上除以10的7次的除頻器
+**Test_4**  
+Test_3的BD加上除以10的7次的除頻器  
+新增xdc資料夾  

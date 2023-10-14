@@ -1,0 +1,16 @@
+set_property PACKAGE_PIN AK13     [get_ports "GPIO_DIP_SW7"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW7"] ;
+set_property PACKAGE_PIN AL13     [get_ports "GPIO_DIP_SW6"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW6"] ;
+set_property PACKAGE_PIN AP12     [get_ports "GPIO_DIP_SW5"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW5"] ;
+set_property PACKAGE_PIN AN12     [get_ports "GPIO_DIP_SW4"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW4"] ;
+set_property PACKAGE_PIN AN13     [get_ports "GPIO_DIP_SW3"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW3"] ;
+set_property PACKAGE_PIN AM14     [get_ports "GPIO_DIP_SW2"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW2"] ;
+set_property PACKAGE_PIN AP14     [get_ports "GPIO_DIP_SW1"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW1"] ;
+set_property PACKAGE_PIN AN14     [get_ports "GPIO_DIP_SW0"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_DIP_SW0"] ;

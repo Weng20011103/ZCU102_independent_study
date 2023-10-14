@@ -1,0 +1,16 @@
+set_property PACKAGE_PIN A20      [get_ports "PMOD0_0"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_0"] ;
+set_property PACKAGE_PIN B20      [get_ports "PMOD0_1"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_1"] ;
+set_property PACKAGE_PIN A22      [get_ports "PMOD0_2"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_2"] ;
+set_property PACKAGE_PIN A21      [get_ports "PMOD0_3"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_3"] ;
+set_property PACKAGE_PIN B21      [get_ports "PMOD0_4"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_4"] ;
+set_property PACKAGE_PIN C21      [get_ports "PMOD0_5"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_5"] ;
+set_property PACKAGE_PIN C22      [get_ports "PMOD0_6"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_6"] ;
+set_property PACKAGE_PIN D21      [get_ports "PMOD0_7"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PMOD0_7"] ;

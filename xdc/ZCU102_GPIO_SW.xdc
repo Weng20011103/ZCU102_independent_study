@@ -1,0 +1,10 @@
+set_property PACKAGE_PIN AG15     [get_ports "GPIO_SW_N"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_N"] ;
+set_property PACKAGE_PIN AE14     [get_ports "GPIO_SW_E"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_E"] ;
+set_property PACKAGE_PIN AF15     [get_ports "GPIO_SW_W"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_W"] ;
+set_property PACKAGE_PIN AE15     [get_ports "GPIO_SW_S"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_S"] ;
+set_property PACKAGE_PIN AG13     [get_ports "GPIO_SW_C"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_C"] ;
