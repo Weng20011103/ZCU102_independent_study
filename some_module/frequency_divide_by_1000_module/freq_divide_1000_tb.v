@@ -1,19 +1,19 @@
 `timescale 1ns / 1ps
 
-module freq_div_100_tb();
+module freq_div_1000_tb();
 
     // Inputs
     reg clk;          // Clock input signal
     reg reset;        // Reset signal
 
     // Outputs
-    wire clk_div_100;  // Output signal from the tested module
+    wire clk_div_1000;  // Output signal from the tested module
 
-    // Instantiate the freq_divide_100 module (assuming it's the unit under test)
-    freq_div_100 uut (
+    // Instantiate the freq_divide_1000 module (assuming it's the unit under test)
+    freq_div_1000 uut (
         .clk(clk),
         .reset(reset),
-        .clk_div_100(clk_div_100)
+        .clk_div_1000(clk_div_1000)
     );
 
     // Initial block
@@ -25,7 +25,7 @@ module freq_div_100_tb();
         // Apply reset after a delay of 10 time units
         #10 reset = 1;
 
-        #1000;  // Wait for additional 1000 time units
+        #10000;  // Wait for additional 10000 time units
 
         // Finish simulation
         $finish;  // Terminate the simulation
