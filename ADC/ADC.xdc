@@ -1,0 +1,30 @@
+set_property PACKAGE_PIN D20      [get_ports "Data[0]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[0]"] ;
+set_property PACKAGE_PIN E20      [get_ports "Data[1]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[1]"] ;
+set_property PACKAGE_PIN D22      [get_ports "Data[2]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[2]"] ;
+set_property PACKAGE_PIN E22      [get_ports "Data[3]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[3]"] ;
+set_property PACKAGE_PIN F20      [get_ports "Data[4]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[4]"] ;
+set_property PACKAGE_PIN G20      [get_ports "Data[5]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[5]"] ;
+set_property PACKAGE_PIN J20      [get_ports "Data[6]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[6]"] ;
+set_property PACKAGE_PIN J19      [get_ports "Data[7]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[7]"] ;
+
+set_property PACKAGE_PIN AG13     [get_ports "reset"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "reset"] ;
+
+set_property PACKAGE_PIN A20      [get_ports "CONVST"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "CONVST"] ;
+set_property PACKAGE_PIN B20      [get_ports "CS"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "CS"] ;
+set_property PACKAGE_PIN A22      [get_ports "PD"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "PD"] ;
+set_property PACKAGE_PIN A21      [get_ports "RD"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "RD"] ;
+set_property PACKAGE_PIN B21      [get_ports "EOC"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "EOC"] ;
