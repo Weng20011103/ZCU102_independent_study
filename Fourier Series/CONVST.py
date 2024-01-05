@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define parameters
-n_terms = 50
+n_terms = 70
 amplitude = 1.71
 T = 1000 * 1e-9  # 1000 ns
 fundamental_frequency = 1 * 1e6
@@ -54,5 +54,5 @@ plt.ylabel('Voltage (V)')
 plt.title(f'Fourier Series with {n_terms} n terms')
 # plt.grid(True, axis='x')  # Remove y-grid, keep x-grid
 plt.grid(False)
-# plt.xlim(0,100)
+plt.xlim(0,100)
 plt.show()
