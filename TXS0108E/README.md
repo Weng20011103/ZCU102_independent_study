@@ -68,4 +68,11 @@ VCCA=1.8V, VCCB=3.3V, OE always on.
 "The edge accelerators are indeed the likely cause, probably because of ringing on the signal lines that falsely triggers them. ""
 "If you cannot change the signal traces (make them shorter, or add proper termination), then you need to use a device without edge accelerators like the LSF. "  
   
+## Accelerator triggered  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1060810/txs0108e-slew-rate-v-range-consult?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"What matters is the flattest part of the edge, before the accelerator has triggered. "  
+"The internal mechanism are explained in the Guide to Voltage Translation With TXS-Type Translators. "  
+  
   
