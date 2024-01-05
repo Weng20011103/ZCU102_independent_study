@@ -30,4 +30,10 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1237711/txs0108e-port
 參考文章: 
 https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1200261/txs0108e-powe-up-sequence?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
   
-"When VCCA > VCCB, a current flows into VCCA and out of VCCB."
+"When VCCA > VCCB, a current flows into VCCA and out of VCCB."  
+  
+## External pull-up resistor is required to connect open drain output device?  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1195175/txs0108e-the-external-pull-up-resistor-is-required-to-connect-open-drain-output-device?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"External pull-ups are not needed. "  
