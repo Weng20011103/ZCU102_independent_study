@@ -109,6 +109,7 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/852903/txs0108e-getti
 "Long traces/cables/connectors that increase the capacitive load, which causes ringing, which can be misdetected as a rising edge. "  
 "If every falling edge results in a (false) rising edge, you get oscillations. "  
 "If you know the characteristic impedance of your signal lines, you can reduce ringing by adding series resisors for impedance matching. "  
+"But with all signals begin unidirectional, you could also use two SN74AHCT125‍s running at 5V/3.3V for up/downtranslation. "  
   
 ## Question on TXS0104/TXS0108E schematic  
 參考文章: 
@@ -143,5 +144,9 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1225400/txs0108e-gett
 "Ringing is caused by the capacitance and inductance of long cables, and is probably amplified by the unstable VCC/GND voltages, also due to long cables. "  
 "After going through several posts in the forum, I found out that setting the probe to 10x would probably resolve the problem and it did. "  
   
-
+## Can TXS0108E support 10MHz MDIO signal voltage level shift?  
+參考文章:
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/934678/txs0108e-can-txs0108e-support-10mhz-mdio-signal-voltage-level-shift?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"I think you answered your own question, the datasheet states max 2 Mbps ( equivalent to 1 MHz). "  
   
