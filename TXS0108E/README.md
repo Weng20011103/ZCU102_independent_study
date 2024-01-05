@@ -38,11 +38,6 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1195175/txs0108e-the-
   
 "External pull-ups are not needed. "  
   
-## LOOK HERE  
-https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1225400/txs0108e-getting-3-3v-as-output-instead-of-5v?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
-  
-https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1176591/txs0108e-q1-txs0108e-portb-io-oscillating?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
-  
 ## SPI communication of 400 kbps  
 參考文章: 
 https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1121354/txs0108e-q1-5v-3v-on-spi-communication-of-400kbps?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
