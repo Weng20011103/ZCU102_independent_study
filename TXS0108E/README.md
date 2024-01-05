@@ -46,6 +46,17 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1176591/txs0108e-q1-t
 ## SPI communication of 400 kbps  
 參考文章: 
 https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1121354/txs0108e-q1-5v-3v-on-spi-communication-of-400kbps?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
 "TXS has internal pull-up resistors and will not work with external pull-down resistors. "  
 "For fixed-direction signals, a translator like the TXU0304-Q1 would be a better solution. "  
+  
+## Distortion of output waveform  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1112346/txs0108e-txs0108epwr-inquiry-about-distortion-of-output-waveform?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"The capacitive load is too high (the edge accelerators of both the TXS and TXB have problems with that). "  
+"For SPI applications would suggest considering two TXU0304 to better suit the application. "  
+
+"long traces, connectors, or cables. " 要納入考慮。  
+  
   
