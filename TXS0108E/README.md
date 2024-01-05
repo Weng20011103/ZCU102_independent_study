@@ -37,3 +37,8 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1200261/txs0108e-powe
 https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1195175/txs0108e-the-external-pull-up-resistor-is-required-to-connect-open-drain-output-device?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
   
 "External pull-ups are not needed. "  
+  
+## LOOK HERE  
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1225400/txs0108e-getting-3-3v-as-output-instead-of-5v?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1176591/txs0108e-q1-txs0108e-portb-io-oscillating?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
