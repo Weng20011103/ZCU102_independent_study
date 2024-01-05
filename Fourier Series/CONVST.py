@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define parameters
-n_terms = 100
+n_terms = 50
 amplitude = 1.71
 T = 1000 * 1e-9  # 1000 ns
 fundamental_frequency = 1 * 1e6
@@ -15,8 +15,8 @@ y = np.full_like(t, amplitude)
 
 # Calculate and add Fourier series terms
 for n in range(1, n_terms + 1):
-    y += (1.8 * (np.sin(0.02 * n * np.pi) - np.sin(0.12 * n * np.pi)) / (n * np.pi)) * np.cos(n * 2 * np.pi * t / T) + \
-         (1.8 * (np.cos(0.12 * n * np.pi) - np.cos(0.02 * n * np.pi)) / (n * np.pi)) * np.sin(n * 2 * np.pi * t / T)
+    y += (1.8 * (np.sin(0.02 * n * np.pi) - np.sin(0.12 * n * np.pi)) / (n * np.pi)) * np.cos(n * 2 * np.pi * t / T) / np.sqrt(1+np.square(n/350)) + \
+         (1.8 * (np.cos(0.12 * n * np.pi) - np.cos(0.02 * n * np.pi)) / (n * np.pi)) * np.sin(n * 2 * np.pi * t / T) / np.sqrt(1+np.square(n/350)) # np.sqrt(1+np.square(n/350)) stems from oscilloscope
 
 # Print the fundamental frequency
 if fundamental_frequency >= 1e9:
