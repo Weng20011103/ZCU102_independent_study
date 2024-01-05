@@ -75,4 +75,20 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1060810/txs0108e-slew
 "What matters is the flattest part of the edge, before the accelerator has triggered. "  
 "The internal mechanism are explained in the Guide to Voltage Translation With TXS-Type Translators. "  
   
+## Push pull and open drain  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1017936/txs0108e-q1-txs0108e-push-pull-and-open-drain?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"A resistor is not a push/pull driver. You would need a device that can actively drive high. "  
+  
+## The outputting signal of TXS0108 is bad.
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1082771/txs0108e-the-outputting-signal-of-txs0108-is-bad?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"Bidirectional translators do not work when the load is too high. "  
+"In this application, you should use direction-controlled or unidirectional translators like the SN74AXC8T245, SN74AXC4T774, or TXU0104/TXU0204/TCU0304. "  
+"Then it might be caused by the oscilloscope probe, or something connected on the other side. "  
+  
+
+  
   
