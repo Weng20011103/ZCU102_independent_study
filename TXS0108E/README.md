@@ -59,4 +59,13 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1112346/txs0108e-txs0
 
 "long traces, connectors, or cables. " 要納入考慮。  
   
+## PortB IO oscillating  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1176591/txs0108e-q1-txs0108e-portb-io-oscillating?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+VCCA=1.8V, VCCB=3.3V, OE always on.  
+  
+"The edge accelerators are indeed the likely cause, probably because of ringing on the signal lines that falsely triggers them. ""
+"If you cannot change the signal traces (make them shorter, or add proper termination), then you need to use a device without edge accelerators like the LSF. "  
+  
   
