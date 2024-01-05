@@ -89,6 +89,37 @@ https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1082771/txs0108e-the-
 "In this application, you should use direction-controlled or unidirectional translators like the SN74AXC8T245, SN74AXC4T774, or TXU0104/TXU0204/TCU0304. "  
 "Then it might be caused by the oscilloscope probe, or something connected on the other side. "  
   
-
+## Is this device suitable for SPI and I2C  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1055834/txs0108e-is-this-device-suitable-for-spi-and-i2c?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"SPI does not have bidirectional signals, so instead of the TXB0104, consider the TXU0104/TXU0204/TXU0304. "  
+  
+## TXS0108E fails for an I2C communication  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/973397/txs0108e-txs0108e-fails-for-an-i2c-communication?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"The TXS is designed to output sharp edges for up to 70 pF loads. "  
+  
+## Getting 19MHz signal on Pin1  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/852903/txs0108e-getting-19mhz-signal-on-pin1?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"The TXS has edge accelerators that trigger when it detects the beginning of a rising edge on an I/O pin. "  
+"Long traces/cables/connectors that increase the capacitive load, which causes ringing, which can be misdetected as a rising edge. "  
+"If every falling edge results in a (false) rising edge, you get oscillations. "  
+"If you know the characteristic impedance of your signal lines, you can reduce ringing by adding series resisors for impedance matching. "  
+  
+## Question on TXS0104/TXS0108E schematic  
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/1010585/txs0104e-question-on-txs0104-txs0108e-schematic?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"If OE is tied high (you do not even need a resistor), the I/Os might be active during power up/down. "  
+  
+## Unused channels
+參考文章: 
+https://e2e.ti.com/support/logic-group/logic/f/logic-forum/993203/txs0108e-unused-channels?tisearch=e2e-sitesearch&keymatch=TXS0108E#  
+  
+"Unused channel I/O pins on the TXS family of translators can remain open / disconnected. "  
   
   
