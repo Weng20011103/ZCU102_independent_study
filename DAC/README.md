@@ -2,6 +2,12 @@ Verilog的輸入訊號clk_50M的頻率為f，週期為T。則輸出CLK_3的頻�
   
 Up to 20 MHz(50 ns) Clock.  
   
+註:
+ 10 kHz, 100 µs.  
+100 kHz,  10 µs.  
+  1 MHz,   1 µs.
+ 10 MHz, 0.1 µs.
+  
 For a full-scale step, the output will settle to 1 LSB within 7 µs.  
   
 The CLR input can be used to ensure that the DAC7611 output is 0 V on power-up or as required by the application.  
