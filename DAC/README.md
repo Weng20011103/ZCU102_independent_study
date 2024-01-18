@@ -1,11 +1,11 @@
 Verilog的輸入訊號clk_50M的頻率為f，週期為T。則輸出CLK_3的頻率為0.25f，週期為4T。
   
-Up to 20 MHz(50 ns) Clock.  
+Up to 20 MHz (50 ns) Clock.  
   
 註:  
  10 kHz, 100 µs.  
 100 kHz,  10 µs.  
-  1 MHz,   1 µs.
+  1 MHz,   1 µs.  
  10 MHz, 0.1 µs.
   
 For a full-scale step, the output will settle to 1 LSB within 7 µs.  
