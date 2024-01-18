@@ -5,7 +5,7 @@ module testbench;
     // Input signals
     reg clk_50M;
     reg locked;
-    reg [11:0] Data;
+    reg [7:0] Data;
 
     // Output signals
     wire CS_2;
@@ -36,10 +36,10 @@ module testbench;
     initial begin
         // Initialize inputs
         locked = 0;
-        Data = 12'b0;
+        Data = 8'b0;
 
         // Apply stimulus
-        #20 Data = 12'b1010_1101_0101;  // Change data
+        #20 Data = 8'b1101_0101;  // Change data
         #40 locked = 1;
         
         // Add more test scenarios as needed
