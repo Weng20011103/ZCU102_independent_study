@@ -1,4 +1,4 @@
-//J1, top to down, left to right
+//J2, top to down, left to right
 //SDA
 
 //SCL
