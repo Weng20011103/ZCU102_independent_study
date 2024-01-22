@@ -7,7 +7,7 @@ module ADC_control(
     output reg [7:0]Valid_Data,
     output reg CONVST, // Pin4
     output reg CS,     // Pin5
-    output reg RD,     // Pin6
+    output reg RD      // Pin6
 );
 
     reg [6:0] state;
