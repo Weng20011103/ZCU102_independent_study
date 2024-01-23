@@ -15,7 +15,7 @@ Pin 14: VL，接+1.8V。
 Pin 15: S6，輸入或輸出。  
 Pin 16: NIC(Not Internally Connected)，不用接。  
 Pin 17: S5，輸入或輸出。  
-Pin 18: VDD，接+12V，接上0.1μF的去耦電容。
+Pin 18: VDD，接+12V，接上0.1μF的去耦電容。  
 Pin 19: NIC(Not Internally Connected)，不用接。  
 Pin 20: A2，數位控制訊號，VL=+1.8V，VINH=+1.17V，VINL=+0.63V。  
 Pin 21: A1，數位控制訊號，VL=+1.8V，VINH=+1.17V，VINL=+0.63V。  
