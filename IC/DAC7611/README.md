@@ -1,4 +1,4 @@
-Pin 1: VDD，接 +3.3 V，接上 0.1 μF 的去耦電容。  
+Pin 1: VDD，接 +3.3 V，接上 0.1 μF 和 10 μF 的去耦電容。  
 Pin 2: CS, Chip Select (active LOW).  
 Pin 3: CLK, Synchronous Clock for the Serial Data Input.  
 Pin 4: SDI, Serial Data Input. Data is clocked into the internal serial register on the rising edge of CLK.  
