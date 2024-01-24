@@ -11,7 +11,7 @@ Pin 10: NO CONNECT。
 Pin 11: VIN1，輸入 0 V 到 +2 V。  
 Pin 12: VMID，不用接。  
 Pin 13: VREF IN/OUT，不用接。  
-Pin 14: VDD，接 +3.3 V。  
+Pin 14: VDD，接 +3.3 V，接上 0.1 μF 和 10 μF 的去耦電容。  
 Pin 15: AGND，接地。  
 Pin 16: DB7，輸出。  
 Pin 17: DB6，輸出。  
