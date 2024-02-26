@@ -1,9 +1,3 @@
-// LA32_P
-set_property PACKAGE_PIN U11      [get_ports "CS_2"] ;
-set_property IOSTANDARD  LVCMOS18 [get_ports "CS_2"] ;
-set_property PACKAGE_PIN U11      [get_ports "FMC_HPC0_LA32_P"] ;
-set_property IOSTANDARD  LVCMOS18 [get_ports "FMC_HPC0_LA32_P"] ;
-
 // LA28_P
 set_property PACKAGE_PIN AG15     [get_ports "GPIO_SW_N"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "GPIO_SW_N"] ;
