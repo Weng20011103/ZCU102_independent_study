@@ -3,7 +3,7 @@ module DAC7611P(
     input  enable,      // high enable
     output reg CLK_3,   // Pin 3
     output reg SDI_4,   // Pin 4
-    output reg LD_5,    // Pin 5
+    output reg LD_5     // Pin 5
 );
 
     reg [7:0] state;
@@ -63,7 +63,7 @@ module DAC7611P(
 
     // Pin5, LD
     always@(*) begin
-        LD_5 = (state >= 8'd1 && state <= 8'd50)||(state >= 8'd51 && state <= 8'd200) ? 1'b1 : 1'b0;
+        LD_5 = (state >= 8'd1 && state <= 8'd50) ? 1'b1 : 1'b0;
     end
 
 endmodule
