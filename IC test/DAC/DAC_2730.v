@@ -3,7 +3,7 @@ module DAC7611P(
     input  enable,      // high enable
     output reg CLK_3,   // Pin 3
     output reg SDI_4,   // Pin 4
-    output reg LD_5     // Pin 5
+    output reg LD_5,    // Pin 5
     output reg CLR_6    // Pin 6
 );
 
