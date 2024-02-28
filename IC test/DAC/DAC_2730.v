@@ -4,6 +4,7 @@ module DAC7611P(
     output reg CLK_3,   // Pin 3
     output reg SDI_4,   // Pin 4
     output reg LD_5     // Pin 5
+    output reg CLR_6    // Pin 6
 );
 
     reg [7:0] state;
@@ -23,7 +24,7 @@ module DAC7611P(
         endcase
     end
 
-    // Pin3, CLK
+    // Pin 3, CLK
     always@(*) begin
         case(state)
             8'd1,   8'd2:   CLK_3 = 1'b0;
@@ -42,7 +43,7 @@ module DAC7611P(
         endcase
     end
 
-    // Pin4, SDI
+    // Pin 4, SDI
     always@(*) begin
         case(state)
             8'd1,  8'd2, 8'd3,  8'd4:      SDI_4 = 1; // Data[11]
@@ -61,9 +62,14 @@ module DAC7611P(
         endcase
     end
 
-    // Pin5, LD
+    // Pin 5, LD
     always@(*) begin
-        LD_5 = (state >= 8'd1 && state <= 8'd50) ? 1'b1 : 1'b0;
+        LD_5 = (state >= 8'd1 && state <= 8'd50) || (state >= 8'd53 && state <= 8'd200) ? 1'b1 : 1'b0;
+    end
+
+    // Pin 6, CLR
+    always@(*) begin
+        CLR_6 = (state >= 8'd60 && state <= 8'd61) ? 1'b0 : 1'b1;
     end
 
 endmodule
