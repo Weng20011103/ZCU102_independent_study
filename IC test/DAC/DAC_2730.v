@@ -69,7 +69,7 @@ module DAC7611P(
 
     // Pin 6, CLR
     always@(*) begin
-        CLR_6 = (state >= 8'd60 && state <= 8'd61) ? 1'b0 : 1'b1;
+        CLR_6 = (state >= 8'd180 && state <= 8'd181) ? 1'b0 : 1'b1;
     end
 
 endmodule
