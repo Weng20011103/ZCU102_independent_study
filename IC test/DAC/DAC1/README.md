@@ -1,1 +1,1 @@
-![alt text](LD.png "Title")  
+![LD.png](LD.png "LD.png")  
