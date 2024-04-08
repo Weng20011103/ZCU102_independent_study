@@ -22,7 +22,7 @@
 |1|1|1|1|S8|
   
 ## 電路圖  
-BL 一部分電路如下圖所示:
+BL 一部分電路如下圖所示:  
 ![Figure_1.png](plot/Figure_1.png "Figure_1.png")  
   
 ## IC  
