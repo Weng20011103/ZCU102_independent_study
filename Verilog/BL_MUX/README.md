@@ -19,6 +19,10 @@
 |1|1|0|0|S5|
 |1|1|0|1|S6|
 |1|1|1|0|S7|
-|1|1|1|0|S8|
+|1|1|1|1|S8|
   
+## IC  
+IC 為 ADG1408LYCPZ。  
+[ADG1408LYCPZ-REEL7](https://www.mouser.tw/ProductDetail/Analog-Devices/ADG1408LYCPZ-REEL7?qs=1Kr7Jg1SGW%2FDLWV%2Fv6ZJUw%3D%3D)  
+[Data Sheet](https://www.mouser.tw/datasheet/2/609/adg1408l-3365138.pdf)  
   
