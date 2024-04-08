@@ -21,6 +21,10 @@
 |1|1|1|0|S7|
 |1|1|1|1|S8|
   
+## 電路圖  
+BL 一部分電路如下圖所示:
+![Figure_1.png](plot/Figure_1.png "Figure_1.png")  
+  
 ## IC  
 IC 為 ADG1408LYCPZ。  
 [ADG1408LYCPZ-REEL7](https://www.mouser.tw/ProductDetail/Analog-Devices/ADG1408LYCPZ-REEL7?qs=1Kr7Jg1SGW%2FDLWV%2Fv6ZJUw%3D%3D)  
