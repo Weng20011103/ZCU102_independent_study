@@ -6,7 +6,7 @@
   
 此程式輸出要產生四個控制訊號，分別為 EN_out、A2_out、A1_out 和 A0_out。  
   
-當 Reset 訊號為 0 時，四個輸出控制訊號接輸出 0。  
+當 Reset 訊號為 0 時，四個輸出控制訊號皆輸出 0。  
   
 不同輸出控制訊號組合如下:
 |EN_out|A2_out|A1_out|A0_out|MUX Pin 10|
