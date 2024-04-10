@@ -22,7 +22,7 @@
 |Pin 29|LA24_N|K12||
 |Pin 31|LA28_P|T7||
 |Pin 32|LA28_N|T6||
-|Pin 34|LA30_P|V6||
-|Pin 35|LA30_N|U6||
-|Pin 37|LA32_P|U11||
-|Pin 38|LA32_N|T11||
+|Pin 34|LA30_P|V6|U_1006 的 A2 訊號|
+|Pin 35|LA30_N|U6|U_1006 的 A1 訊號|
+|Pin 37|LA32_P|U11|U_1006 的 A0 訊號|
+|Pin 38|LA32_N|T11|U_1006 的 EN 訊號|
