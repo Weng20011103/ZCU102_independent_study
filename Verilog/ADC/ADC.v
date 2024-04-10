@@ -5,11 +5,14 @@ module ADC_control(
     input CONVST_in,
     input PD_in,
     output reg CONVST_18, // Pin4
-    output reg RD_18,     // Pin6
+    output RD_18,     // Pin6
     output reg PD_18      // Pin9
 );
-    always@(CONVST_in) begin
-        if(CONVST_in == 1'b1) begin
+    always@(CONVST_in or Reset) begin
+        if(Reset == 1'b0) begin
+            CONVST_18 = 1'b1;
+        end
+        else if(CONVST_in == 1'b1) begin
             CONVST_18 = 1'b1;
         end
         else begin
@@ -17,12 +20,15 @@ module ADC_control(
         end
     end
 
-    always@(PD_in) begin
-        if(PD_in == 1'b0) begin
-            PD = 1'b0;
+    always@(PD_in or Reset) begin
+        if(Reset == 1'b0) begin
+            PD_18 = 1'b0;
+        end
+        else if(PD_in == 1'b0) begin
+            PD_18 = 1'b0;
         end
         else begin
-            PD = 1'b1;
+            PD_18 = 1'b1;
         end
     end
 
@@ -40,7 +46,7 @@ module ADC_control(
     always@(*) begin
         case(state)
             4'd0:begin  
-                if(EOC_18)
+                if(!EOC_18)
                     nextstate = 4'd1;
                 else
                     nextstate = 4'd0;
@@ -49,5 +55,7 @@ module ADC_control(
             default: nextstate = state + 1'd1;
         endcase
     end
-    
+
+    assign RD_18 = (state >= 4'd3 && state <= 4'd8) ? 1'b0 : 1'b1;
+
 endmodule
