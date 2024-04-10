@@ -1,6 +1,18 @@
 # XDC 腳位  
 此資料夾紀錄 ZCU102 和 FMC 板使用到的腳位。  
   
+## ZCU102 PMOD GPIO Headers J55 母頭  
+|ZCU102 名稱|Vivado 腳位對應|使用的腳位|
+|:--:|:--:|:--:|
+|PMOD0_0|A20||
+|PMOD0_1|B20||
+|PMOD0_2|A22||
+|PMOD0_3|A21||
+|PMOD0_4|B21||
+|PMOD0_5|C21||
+|PMOD0_6|C22||
+|PMOD0_7|D21||
+  
 ## FMC J4 腳位  
 |Pin 編號|FMC 名稱|Vivado 腳位對應|使用的腳位|
 |:--:|:--:|:--:|:--:|
