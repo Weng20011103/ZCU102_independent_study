@@ -13,11 +13,11 @@
 |Pin 16|LA11_P|AB6||
 |Pin 17|LA11_N|AB5||
 |Pin 19|LA15_P|Y10||
-|Pin 20|LA15_N|Y9||
+|Pin 20|LA15_N|Y9|ADC 的 CONVST 訊號|
 |Pin 22|LA19_P|L13|ADC 的 EOC 訊號|
 |Pin 23|LA19_N|K13|ADC 的 RD 訊號|
 |Pin 25|LA21_P|P12|ADC 的 PD 訊號|
-|Pin 26|LA21_N|N12|ADC 的 CONVST 訊號|
+|Pin 26|LA21_N|N12||
 |Pin 28|LA24_P|L12|U_1016 的 A2 訊號|
 |Pin 29|LA24_N|K12|U_1016 的 A1 訊號|
 |Pin 31|LA28_P|T7|U_1016 的 A0 訊號|
