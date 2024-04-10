@@ -29,6 +29,18 @@
 |時間參數|3 V ± 10% |單位|說明|
 |:--:|:--:|:--:|:--:|
 |t1|420|ns max|轉換所需時間|
+|t2|20|ns min|CONVST 維持於 0 的最少時間|
+|t3|30|ns min|RD 恢復至 1 時離下一次的 CONVST 下拉時間|
+|t4|110|ns max|EOC 在 0 的最久時間|
+|t4|70|ns min|EOC 在 0 的最小時間|
+|t5|10|ns max|EOC 在 RD 拉高後進行拉高的時間|
+|t6|0|ns min|CS to RD setup time|
+|t7|0|ns min|CS to RD hold time|
+|t8|30|ns min|RD 維持於 0 的最少時間|
+|t9|20|ns max|DB 在 RD 下拉後把有效資料輸出的時間|
+|t10|20|ns max|Bus relinquish time after RD high|
+|t10|5|ns min|Bus relinquish time after RD high|
+|tPOWER UP|25|μs typ|Power-up time from rising edge of CONVST using on-chip reference|
   
 ## 程式說明  
   
