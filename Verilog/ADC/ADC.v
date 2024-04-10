@@ -1,36 +1,23 @@
 module ADC_control(
-    input clk_100M,       // clk is 100MHz, 10ns
-    input Reset,          // Reset is low trigger
-    input EOC_18,         // Pin8
+    input clk_100M,     // clk is 100MHz, 10ns
+    input Reset,        // Reset is low trigger
+    input EOC_18,       // Pin8
     input CONVST_in,
     input PD_in,
-    output reg CONVST_18, // Pin4
-    output RD_18,     // Pin6
-    output reg PD_18      // Pin9
+    output CONVST_18,   // Pin4
+    output RD_18,       // Pin6
+    output PD_18        // Pin9
 );
-    always@(CONVST_in or Reset) begin
-        if(Reset == 1'b0) begin
-            CONVST_18 = 1'b1;
-        end
-        else if(CONVST_in == 1'b1) begin
-            CONVST_18 = 1'b1;
-        end
-        else begin
-            CONVST_18 = 1'b0;
-        end
-    end
 
-    always@(PD_in or Reset) begin
-        if(Reset == 1'b0) begin
-            PD_18 = 1'b0;
-        end
-        else if(PD_in == 1'b0) begin
-            PD_18 = 1'b0;
-        end
-        else begin
-            PD_18 = 1'b1;
-        end
-    end
+    // 當 Reset == 1'b0 時，CONVST_18 輸出 1.8 V (logic 1)。
+    // 否則 CONVST_18 會等於 CONVST_in。
+    // CONVST_18 從 logic 1 拉到 logic 0 代表 ADC 需要進行電壓的取樣和轉換。
+    assign CONVST_18 = (Reset == 1'b0) ? 1'b1 : CONVST_in;
+
+    // 當 Reset == 1'b0 時，PD_18 輸出 0 V (logic 0)。
+    // 否則 PD_18 會等於 PD_in。
+    // 此訊號在 ADC 的電源供應穩定後從 logic 0 拉到 logic 1。
+    assign PD_18 = (Reset == 1'b0) ? 1'b0 : PD_in;
 
     reg [3:0] state;
     reg [3:0] nextstate;
@@ -56,6 +43,7 @@ module ADC_control(
         endcase
     end
 
+    // RD_18 從 logic 1 拉低到 logic 0 時 ADC 在一段時間後才會把轉換的數據呈現在 Pin 腳上。
     assign RD_18 = (state >= 4'd3 && state <= 4'd8) ? 1'b0 : 1'b1;
 
 endmodule
