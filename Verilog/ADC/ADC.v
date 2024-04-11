@@ -58,7 +58,7 @@ module ADC_control(
     // assign DB1_out = (state >= 4'd5 && state <= 4'd7) ? DB1_in : 1'b0;
     // assign DB0_out = (state >= 4'd5 && state <= 4'd7) ? DB0_in : 1'b0;
 
-    always@(posedge clk_100M or negedge Reset ) begin
+    always@(posedge clk_100M or negedge Reset) begin
         if(!Reset)
             DB_out <= 8'd11;
         else begin
