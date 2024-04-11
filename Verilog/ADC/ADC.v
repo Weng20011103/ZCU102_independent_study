@@ -4,11 +4,11 @@ module ADC_control(
     input EOC_18,       // Pin8
     input CONVST_in,
     input PD_in,
-    input DB0_in, DB1_in, DB2_in, DB3_in, DB4_in, DB5_in, DB6_in, DB7_in,
+    input [7:0] DB_in,
     output CONVST_18,   // Pin4
     output RD_18,       // Pin6
     output PD_18,       // Pin9
-    output DB0_out, DB1_out, DB2_out, DB3_out, DB4_out, DB5_out, DB6_out, DB7_out
+    output reg [7:0] DB_out
 );
 
     // 當 Reset == 1'b0 時，CONVST_18 輸出 1.8 V (logic 1)。
@@ -49,13 +49,24 @@ module ADC_control(
     assign RD_18 = (state >= 4'd3 && state <= 4'd8) ? 1'b0 : 1'b1;
 
     // 在 RD_18 從 logic 1 拉低到 logic 0 後 20 ns 再接受 DB 腳上的數據。
-    assign DB7_out = (state >= 4'd5 && state <= 4'd7) ? DB7_in : 1'b0;
-    assign DB6_out = (state >= 4'd5 && state <= 4'd7) ? DB6_in : 1'b0;
-    assign DB5_out = (state >= 4'd5 && state <= 4'd7) ? DB5_in : 1'b0;
-    assign DB4_out = (state >= 4'd5 && state <= 4'd7) ? DB4_in : 1'b0;
-    assign DB3_out = (state >= 4'd5 && state <= 4'd7) ? DB3_in : 1'b0;
-    assign DB2_out = (state >= 4'd5 && state <= 4'd7) ? DB2_in : 1'b0;
-    assign DB1_out = (state >= 4'd5 && state <= 4'd7) ? DB1_in : 1'b0;
-    assign DB0_out = (state >= 4'd5 && state <= 4'd7) ? DB0_in : 1'b0;
+    // assign DB7_out = (state >= 4'd5 && state <= 4'd7) ? DB7_in : 1'b0;
+    // assign DB6_out = (state >= 4'd5 && state <= 4'd7) ? DB6_in : 1'b0;
+    // assign DB5_out = (state >= 4'd5 && state <= 4'd7) ? DB5_in : 1'b0;
+    // assign DB4_out = (state >= 4'd5 && state <= 4'd7) ? DB4_in : 1'b0;
+    // assign DB3_out = (state >= 4'd5 && state <= 4'd7) ? DB3_in : 1'b0;
+    // assign DB2_out = (state >= 4'd5 && state <= 4'd7) ? DB2_in : 1'b0;
+    // assign DB1_out = (state >= 4'd5 && state <= 4'd7) ? DB1_in : 1'b0;
+    // assign DB0_out = (state >= 4'd5 && state <= 4'd7) ? DB0_in : 1'b0;
+
+    always@(posedge clk_100M or negedge reset ) begin
+        if(!Reset)
+            DB_out <= 8'd11;
+        else begin
+            if(!RD_18)
+                DB_out <= DB_in;
+            else
+                DB_out <= DB_in;
+        end
+    end
 
 endmodule
