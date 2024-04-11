@@ -7,6 +7,6 @@ module MUX12_DEMUX21(
     // control_signal[1] is EN
     // control_signal[0] is A0
     assign EN_out = (Reset == 1'b0) ? 1'b0 : control_signal[1];
-    assign A0_out = (Reset == 1'b0 || control_signal[3] == 1'b0) ? 1'b0 : control_signal[0];
+    assign A0_out = (Reset == 1'b0 || control_signal[1] == 1'b0) ? 1'b0 : control_signal[0];
 
 endmodule
