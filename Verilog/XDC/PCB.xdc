@@ -1,19 +1,27 @@
 // ZCU102 PMOD J55
 // ADC DB0 to DB7
+// PMOD0_0
 set_property PACKAGE_PIN A20      [get_ports "DB0_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB0_in"] ;
+// PMOD0_1
 set_property PACKAGE_PIN B20      [get_ports "DB1_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB1_in"] ;
+// PMOD0_2
 set_property PACKAGE_PIN A22      [get_ports "DB2_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB2_in"] ;
+// PMOD0_3
 set_property PACKAGE_PIN A21      [get_ports "DB3_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB3_in"] ;
+// PMOD0_4
 set_property PACKAGE_PIN B21      [get_ports "DB4_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB4_in"] ;
+// PMOD0_5
 set_property PACKAGE_PIN C21      [get_ports "DB5_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB5_in"] ;
+// PMOD0_6
 set_property PACKAGE_PIN C22      [get_ports "DB6_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB6_in"] ;
+// PMOD0_7
 set_property PACKAGE_PIN D21      [get_ports "DB7_in"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "DB7_in"] ;
 
