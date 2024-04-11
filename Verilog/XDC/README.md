@@ -2,6 +2,7 @@
 此資料夾紀錄 ZCU102 和 FMC 板使用到的腳位。  
   
 ## ZCU102 PMOD GPIO Headers J55 母頭  
+![PMOD.heic](PMOD.heic "PMOD.heic")  
 |ZCU102 名稱|Vivado 腳位對應|使用的腳位|
 |:--:|:--:|:--:|
 |PMOD0_0|A20|ADC 的 DB0 輸入|
