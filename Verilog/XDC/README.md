@@ -2,6 +2,7 @@
 此資料夾紀錄 ZCU102 和 FMC 板使用到的腳位。  
   
 ## ZCU102 PMOD GPIO Headers J55 母頭  
+J55 母頭位於 SD 卡槽旁  
 ![PMOD.png](PMOD.png "PMOD.png")  
 |ZCU102 名稱|Vivado 腳位對應|使用的腳位|
 |:--:|:--:|:--:|
