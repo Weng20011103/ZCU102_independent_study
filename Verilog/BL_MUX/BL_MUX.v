@@ -10,8 +10,8 @@ module BL_MUX(
     // control_signal[0] is A0
 
     assign EN_out = (Reset == 1'b0) ? 1'b0 : control_signal[3];
-    assign A2_out = (Reset == 1'b0 || EN_in == 1'b0) ? 1'b0 : control_signal[2];
-    assign A1_out = (Reset == 1'b0 || EN_in == 1'b0) ? 1'b0 : control_signal[1];
-    assign A0_out = (Reset == 1'b0 || EN_in == 1'b0) ? 1'b0 : control_signal[0];
+    assign A2_out = (Reset == 1'b0 || control_signal[3] == 1'b0) ? 1'b0 : control_signal[2];
+    assign A1_out = (Reset == 1'b0 || control_signal[3] == 1'b0) ? 1'b0 : control_signal[1];
+    assign A0_out = (Reset == 1'b0 || control_signal[3] == 1'b0) ? 1'b0 : control_signal[0];
 
 endmodule
