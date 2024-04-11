@@ -2,7 +2,12 @@
 此 Verilog 檔負責控制 BL 端的 MUX。  
   
 ## 程式說明  
-此程式輸入要有五個控制訊號，分別為 Reset、EN_in、A2_in、A1_in 和 A0_in。   
+此程式輸入要有兩個控制訊號，分別為 Reset 和一個 4-bits 的 control_signal array。   
+  
+control_signal array 各個 bit 對應 MUX 的訊號如下:
+|control_signal[3]|control_signal[2]|control_signal[1]|control_signal[0]|
+|:--:|:--:|:--:|:--:|
+|EN|A2|A1|A0|
   
 此程式輸出要產生四個控制訊號，分別為 EN_out、A2_out、A1_out 和 A0_out。  
   
