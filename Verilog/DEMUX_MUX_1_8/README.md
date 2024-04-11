@@ -1,8 +1,8 @@
-# Bitline MUX  
-此 Verilog 檔負責控制 BL 端的 MUX。  
+# DEMUX_MUX_1_8  
+此 Verilog 檔負責控制 1 對 8 端的 MUX 或 8 對 1 端的 DEMUX。  
   
 ## 程式說明  
-此程式輸入要有兩個控制訊號，分別為 Reset 和一個 4-bits 的 control_signal array。   
+此程式輸入要有兩種控制訊號，分別為 Reset 和一個 4-bits 的 control_signal array。   
   
 control_signal array 各個 bit 對應 MUX 的訊號如下:
 |control_signal[3]|control_signal[2]|control_signal[1]|control_signal[0]|
