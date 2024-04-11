@@ -65,7 +65,7 @@ module ADC_control(
             if(!RD_18)
                 DB_out <= DB_in;
             else
-                DB_out <= DB_in;
+                DB_out <= DB_out;
         end
     end
 
