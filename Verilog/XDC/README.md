@@ -4,14 +4,14 @@
 ## ZCU102 PMOD GPIO Headers J55 母頭  
 |ZCU102 名稱|Vivado 腳位對應|使用的腳位|
 |:--:|:--:|:--:|
-|PMOD0_0|A20||
-|PMOD0_1|B20||
-|PMOD0_2|A22||
-|PMOD0_3|A21||
-|PMOD0_4|B21||
-|PMOD0_5|C21||
-|PMOD0_6|C22||
-|PMOD0_7|D21||
+|PMOD0_0|A20|ADC 的 DB0 輸入|
+|PMOD0_1|B20|ADC 的 DB1 輸入|
+|PMOD0_2|A22|ADC 的 DB2 輸入|
+|PMOD0_3|A21|ADC 的 DB3 輸入|
+|PMOD0_4|B21|ADC 的 DB4 輸入|
+|PMOD0_5|C21|ADC 的 DB5 輸入|
+|PMOD0_6|C22|ADC 的 DB6 輸入|
+|PMOD0_7|D21|ADC 的 DB7 輸入|
   
 ## FMC J4 腳位  
 |Pin 編號|FMC 名稱|Vivado 腳位對應|使用的腳位|
