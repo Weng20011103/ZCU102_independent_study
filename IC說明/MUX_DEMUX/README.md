@@ -2,7 +2,7 @@
   
 # 腳位  
 |Pin|符號|說明|
-|:---|:--:|:---|
+|:--:|:--:|:---|
 |1|VSS|接地|
 |2|S1|輸入或輸出|
 |3|S2|輸入或輸出|
@@ -35,7 +35,7 @@
   
 當數位控制訊號`floating`時，ADG1408L 的開關處於關閉狀態，防止不需要的信號通過開關傳遞，不需要下拉電阻。  
   
-為確保 ADG1408L 的正確操作，需要在 VDD、VSS 和 VL 供應腳上裝上至少 0.1 μF 和 10 μF 的去耦電容，我們的 VSS 直接接地不用接去耦電容。**  
+為確保 ADG1408L 的正確操作，需要在 VDD、VSS 和 VL 供應腳上裝上至少 0.1 μF 和 10 μF 的去耦電容，我們的 VSS 直接接地不用接去耦電容。  
   
 # 連結  
 [ADG1408LYCPZ-REEL7](https://www.mouser.tw/ProductDetail/Analog-Devices/ADG1408LYCPZ-REEL7?qs=1Kr7Jg1SGW%2FDLWV%2Fv6ZJUw%3D%3D)  
