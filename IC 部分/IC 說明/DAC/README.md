@@ -11,6 +11,21 @@
 |7|GND|Ground|
 |8|VOUT|Voltage Output|
   
+# 說明  
+The data format is Straight Binary and is loaded MSB-first into the shift registers.  
+  
+At some point after the data has been entered into the serial shift register, this data can be transferred into the DAC register.  
+This transfer is accomplished with a HIGH to LOW transition of the LD pin.  
+However, the LD pin makes the DAC register transparent. If new data is shifted into the shift register while LD is LOW, the DAC output voltage will change as each new bit is entered.  
+  
+At any time, the contents of the DAC register can be set to 000H (analog output equals 0 V) by taking the CLR input LOW. The DAC register will remain at this value until CLR is returned HIGH and LD is taken LOW to allow the contents of the shift register to be transferred to the DAC register.  
+  
+If LD is LOW when CLR is taken LOW, the DAC register will be set to 000H and the analog output driven to 0 V.  
+  
+The output amplifier has a 7 μs typical settling time to ± 1 LSB of the final value.  
+  
+The power applied to VDD should be well regulated and low-noise. Switching power supplies and DC/DC converters will often have high-frequency glitches or spikes riding on the output voltage.  
+  
 # 連結  
 [DAC7611P](https://www.mouser.tw/ProductDetail/Texas-Instruments/DAC7611P?qs=vul0MlC%2Fa1exrBAtSLlcNA%3D%3D)  
 [DAC7611PB](https://www.mouser.tw/ProductDetail/Texas-Instruments/DAC7611PB?qs=vul0MlC%2Fa1d6ittJzPGSXg%3D%3D)  
