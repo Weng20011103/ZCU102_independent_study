@@ -10,7 +10,7 @@ module DAC7611P(
     reg [9:0] state;
     reg [9:0] nextstate;
 
-    always@(negedge clk or negedge reset) begin
+    always@(posedge clk or negedge reset) begin
         if(!reset)
             state <= 10'd0;
         else
