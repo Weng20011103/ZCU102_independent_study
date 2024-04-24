@@ -30,16 +30,16 @@
   
 |訊號|rram_signals|ZCU102 腳位|FMC 名稱|
 |:---|:---|:--:|:--:|
-|S1|rram_signals[18]||LA27_N|
-|VSL_S1|rram_signals[17]||LA27_P|
-|SL_6|rram_signals[16]||LA18_N|
-|SL_5|rram_signals[15]||LA18_P|
-|SL_4|rram_signals[14]||LA14_N|
-|SL_3|rram_signals[13]||LA14_P|
-|SL_2|rram_signals[12]||LA10_N|
-|SL_1|rram_signals[11]||LA10_P|
-|WL_1_SU|rram_signals[10]||LA06_N|
-|WL_2_SU|rram_signals[9]||LA06_P|
+|S1|rram_signals[18]|L10|LA27_N|
+|VSL_S1|rram_signals[17]|M10|LA27_P|
+|SL_6|rram_signals[16]|N8|LA18_N|
+|SL_5|rram_signals[15]|N9|LA18_P|
+|SL_4|rram_signals[14]|AC6|LA14_N|
+|SL_3|rram_signals[13]|AC7|LA14_P|
+|SL_2|rram_signals[12]|W4|LA10_N|
+|SL_1|rram_signals[11]|W5|LA10_P|
+|WL_1_SU|rram_signals[10]|AC1|LA06_N|
+|WL_2_SU|rram_signals[9]|AC2|LA06_P|
 |WL_3_SU|rram_signals[8]|||
 |WL_4_SU|rram_signals[7]|||
 |WL_5_SU|rram_signals[6]|||
