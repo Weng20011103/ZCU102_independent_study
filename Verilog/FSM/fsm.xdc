@@ -136,6 +136,23 @@ set_property IOSTANDARD  LVCMOS18 [get_ports "EOC_18"] ;
 // FMC_HPC0_LA21_P
 set_property PACKAGE_PIN P12      [get_ports "PD_18"] ;
 set_property IOSTANDARD  LVCMOS18 [get_ports "PD_18"] ;
+// DATA
+set_property PACKAGE_PIN D21      [get_ports "Data[7]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[7]"] ;
+set_property PACKAGE_PIN C22      [get_ports "Data[6]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[6]"] ;
+set_property PACKAGE_PIN C21      [get_ports "Data[5]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[5]"] ;
+set_property PACKAGE_PIN B21      [get_ports "Data[4]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[4]"] ;
+set_property PACKAGE_PIN A21      [get_ports "Data[3]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[3]"] ;
+set_property PACKAGE_PIN A22      [get_ports "Data[2]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[2]"] ;
+set_property PACKAGE_PIN B20      [get_ports "Data[1]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[1]"] ;
+set_property PACKAGE_PIN A20      [get_ports "Data[0]"] ;
+set_property IOSTANDARD  LVCMOS33 [get_ports "Data[0]"] ;
 
 // DAC U1004
 // J2, LA09_P
