@@ -1,7 +1,11 @@
 module fsm(
     input clk_10MHz, locked, reset,
     output adc_control, dac1_control, dac2_control,
-    output [18:0]mux_signals
+    output [17:0]mux_signals,
+    output [18:0]rram_signals,
+    output [3:0]dac_signals_4,
+    output [3:0]dac_signals_15,
+    output ADC_CONVST, ADC_RD, ADC_EOC, ADC_PD
 );
     parameter idle = 4'd0;
     parameter adc = 4'd1;
