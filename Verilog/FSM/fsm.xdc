@@ -63,3 +63,62 @@ set_property IOSTANDARD  LVCMOS18 [get_ports "mux_signals[1]"] ;
 // J4, LA28_P
 set_property PACKAGE_PIN T7       [get_ports "mux_signals[0]"] ;
 set_property IOSTANDARD  LVCMOS18 [get_ports "mux_signals[0]"] ;
+
+// RRAM mux_signals
+// J1, LA27_N
+set_property PACKAGE_PIN L10	  [get_ports "rram_signals[18]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[18]"] ;
+// J1, LA27_P
+set_property PACKAGE_PIN M10	  [get_ports "rram_signals[17]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[17]"] ;
+// J1, LA18_N
+set_property PACKAGE_PIN N8	      [get_ports "rram_signals[16]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[16]"] ;
+// J1, LA18_P
+set_property PACKAGE_PIN N9	      [get_ports "rram_signals[15]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[15]"] ;
+// J1, LA14_N
+set_property PACKAGE_PIN AC6	  [get_ports "rram_signals[14]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[14]"] ;
+// J1, LA14_P
+set_property PACKAGE_PIN AC7	  [get_ports "rram_signals[13]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[13]"] ;
+// J1, LA10_N
+set_property PACKAGE_PIN W4 	  [get_ports "rram_signals[12]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[12]"] ;
+// J1, LA10_P
+set_property PACKAGE_PIN W5 	  [get_ports "rram_signals[11]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[11]"] ;
+// J1, LA06_N
+set_property PACKAGE_PIN AC1 	  [get_ports "rram_signals[10]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[10]"] ;
+// J1, LA06_P
+set_property PACKAGE_PIN AC2 	  [get_ports "rram_signals[9]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[9]"] ;
+// J2, LA26_N
+set_property PACKAGE_PIN K15 	  [get_ports "rram_signals[8]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[8]"] ;
+// J2, LA26_P
+set_property PACKAGE_PIN L15 	  [get_ports "rram_signals[7]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[7]"] ;
+// J2, LA23_N
+set_property PACKAGE_PIN K16 	  [get_ports "rram_signals[6]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[6]"] ;
+// J2, LA23_P
+set_property PACKAGE_PIN L16 	  [get_ports "rram_signals[5]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[5]"] ;
+// J2, LA17_N
+set_property PACKAGE_PIN N11 	  [get_ports "rram_signals[4]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[4]"] ;
+// J2, LA17_P
+set_property PACKAGE_PIN P11	  [get_ports "rram_signals[3]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[3]"] ;
+// J2, LA13_N
+set_property PACKAGE_PIN AC8	  [get_ports "rram_signals[2]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[2]"] ;
+// J2, LA13_P
+set_property PACKAGE_PIN AB8	  [get_ports "rram_signals[1]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[1]"] ;
+// J2, LA09_N
+set_property PACKAGE_PIN W1 	  [get_ports "rram_signals[0]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[0]"] ;
