@@ -5,6 +5,7 @@ module fsm(
     output [3:0]dac_signals_4,
     output [3:0]dac_signals_15,
     input ADC_EOC,
+    input [7:0]Data,
     output ADC_CONVST, ADC_RD, ADC_PD
 );
     assign mux_signals = 18'b00_0000_0000_0000_0000;
