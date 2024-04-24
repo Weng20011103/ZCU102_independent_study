@@ -24,3 +24,28 @@
 |U1016 BL MUX to GND|A2g|mux_signals[2]|L12|LA24_P|
 |U1016 BL MUX to GND|A1g|mux_signals[1]|K12|LA24_N|
 |U1016 BL MUX to GND|A0g|mux_signals[0]|T7|LA28_P|
+  
+## rram_signals 訊號  
+`rram_signals`訊號控制`rram`元件的控制訊號。  
+  
+|訊號|rram_signals|ZCU102 腳位|FMC 名稱|
+|:---|:---|:--:|:--:|
+|S1|rram_signals[]|||
+|VSL_S1|rram_signals[]|||
+|SL_6|rram_signals[]|||
+|SL_5|rram_signals[]|||
+|SL_4|rram_signals[]|||
+|SL_3|rram_signals[]|||
+|SL_2|rram_signals[]|||
+|SL_1|rram_signals[]|||
+|WL_1_SU|rram_signals[]|||
+|WL_2_SU|rram_signals[]|||
+|WL_3_SU|rram_signals[]|||
+|WL_4_SU|rram_signals[]|||
+|WL_5_SU|rram_signals[]|||
+|WL_6_SU|rram_signals[]|||
+|WL_7_SU|rram_signals[]|||
+|WL_8_SU|rram_signals[]|||
+|VWL_S1|rram_signals[]|||
+|VWL_INPUT|rram_signals[]|||
+|READ|rram_signals[]|||
