@@ -27,6 +27,7 @@
   
 ## rram_signals 訊號  
 `rram_signals`訊號控制`rram`元件的控制訊號。  
+***註: `VWL_INPUT`不需要了***  
   
 |訊號|rram_signals|ZCU102 腳位|FMC 名稱|
 |:---|:---|:--:|:--:|
