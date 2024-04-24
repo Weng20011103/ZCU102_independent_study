@@ -122,3 +122,45 @@ set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[1]"] ;
 // J2, LA09_N
 set_property PACKAGE_PIN W1 	  [get_ports "rram_signals[0]"] ;
 set_property IOSTANDARD  LVCMOS18 [get_ports "rram_signals[0]"] ;
+
+// ADC
+// FMC_HPC0_LA15_N
+set_property PACKAGE_PIN Y9       [get_ports "CONVST_18"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "CONVST_18"] ;
+// FMC_HPC0_LA19_N
+set_property PACKAGE_PIN K13      [get_ports "RD_18"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "RD_18"] ;
+// FMC_HPC0_LA19_P
+set_property PACKAGE_PIN L13      [get_ports "EOC_18"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "EOC_18"] ;
+// FMC_HPC0_LA21_P
+set_property PACKAGE_PIN P12      [get_ports "PD_18"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "PD_18"] ;
+
+// DAC U1004
+// J2, LA09_P
+set_property PACKAGE_PIN W2 	  [get_ports "dac_signals_4[3]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_4[3]"] ;
+// J2, LA05_N
+set_property PACKAGE_PIN AC3	  [get_ports "dac_signals_4[2]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_4[2]"] ;
+// J2, LA05_P
+set_property PACKAGE_PIN AB3	  [get_ports "dac_signals_4[1]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_4[1]"] ;
+// J2, LA01_N
+set_property PACKAGE_PIN AC4 	  [get_ports "dac_signals_4[0]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_4[0]"] ;
+
+// DAC U1015
+// J2, LA01_P
+set_property PACKAGE_PIN AB4      [get_ports "dac_signals_15[3]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_15[3]"] ;
+// J2, LA33_N
+set_property PACKAGE_PIN V11	  [get_ports "dac_signals_15[2]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_15[2]"] ;
+// J2, LA31_N
+set_property PACKAGE_PIN V7		  [get_ports "dac_signals_15[1]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_15[1]"] ;
+// J2, LA31_P
+set_property PACKAGE_PIN V8 	  [get_ports "dac_signals_15[0]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "dac_signals_15[0]"] ;
