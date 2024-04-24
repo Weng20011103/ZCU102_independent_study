@@ -55,7 +55,17 @@
   
 |訊號|dac_signals_4|ZCU102 腳位|FMC 名稱|
 |:---|:---|:--:|:--:|
-|CLK|dac_signals_4[3]|W2|LA09_P|
-|SDI|dac_signals_4[2]|AC3|LA05_N|
-|LD|dac_signals_4[1]|AB3|LA05_P|
-|CLR|dac_signals_4[0]|AC4|LA01_N|
+|CLK_L|dac_signals_4[3]|W2|LA09_P|
+|SDI_L|dac_signals_4[2]|AC3|LA05_N|
+|LD_L|dac_signals_4[1]|AB3|LA05_P|
+|CLR_L|dac_signals_4[0]|AC4|LA01_N|
+  
+## dac_signals_15 訊號  
+`dac_signals_15`訊號控制編號`U1015`的`DAC`元件的控制訊號。  
+  
+|訊號|dac_signals_15|ZCU102 腳位|FMC 名稱|
+|:---|:---|:--:|:--:|
+|CLK_R|dac_signals_15[3]|AB4|LA01_P|
+|SDI_R|dac_signals_15[2]|V11|LA33_N|
+|LD_R|dac_signals_15[1]|V7|LA31_N|
+|CLR_R|dac_signals_15[0]|V8|LA31_P|
