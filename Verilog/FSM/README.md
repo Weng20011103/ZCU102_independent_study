@@ -49,3 +49,13 @@
 |VWL_S1|rram_signals[2]|AC8|LA13_N|
 |VWL_INPUT|rram_signals[1]|AB8|LA13_P|
 |READ|rram_signals[0]|W1|LA09_N|
+  
+## dac_signals_4 訊號  
+`dac_signals_4`訊號控制編號`U1004`的`DAC`元件的控制訊號。  
+  
+|訊號|dac_signals_4|ZCU102 腳位|FMC 名稱|
+|:---|:---|:--:|:--:|
+|CLK|dac_signals_4[3]|W2|LA09_P|
+|SDI|dac_signals_4[2]|AC3|LA05_N|
+|LD|dac_signals_4[1]|AB3|LA05_P|
+|CLR|dac_signals_4[0]|AC4|LA01_N|
