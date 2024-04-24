@@ -89,3 +89,16 @@
 |ADC_RD|K13|LA19_N|
 |ADC_EOC|L13|LA21_P|
 |ADC_PD|P12|LA21_P|
+  
+`Data`訊號接收`ADC`元件的`DB7`到`DB0`。  
+  
+|訊號|Data|ZCU102 腳位|ZCU102 名稱|
+|:---|:---|:--:|:--:|
+|DB7|Data[7]|D21|PMOD0_7|
+|DB6|Data[6]|C22|PMOD0_6|
+|DB5|Data[5]|C21|PMOD0_5|
+|DB4|Data[4]|B21|PMOD0_4|
+|DB3|Data[3]|A21|PMOD0_3|
+|DB2|Data[2]|A22|PMOD0_2|
+|DB1|Data[1]|B20|PMOD0_1|
+|DB0|Data[0]|A20|PMOD0_0|
