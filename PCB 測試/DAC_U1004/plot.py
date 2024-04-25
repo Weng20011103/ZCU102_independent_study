@@ -59,7 +59,7 @@ def plot_csv(data):
     plt.subplots_adjust(top=0.9)
 
     # Add a big title to the entire figure
-    plt.suptitle('DAC U1015', x=0.5)
+    plt.suptitle('DAC U1004', x=0.5)
 
     # Display the plot
     plt.show()
