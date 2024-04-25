@@ -111,7 +111,7 @@ module DAC7611P(
     // CLR Clear Pulse Width 30 ns min
     always@(*) begin
         case(state)
-            10'd150: dac_signals_4[0] = ZERO;
+            10'd200: dac_signals_4[0] = ZERO;
             default: dac_signals_4[0] = ONE;
         endcase
     end
@@ -120,6 +120,7 @@ module DAC7611P(
     always@(*) begin
         case(state)
             10'd0: mux_signals = 6'b000000;
+            10'd180, 10'd181: mux_signals = 6'b000010;
             default: mux_signals = 6'b000000;
             // default: mux_signals = 6'b000010;
         endcase
