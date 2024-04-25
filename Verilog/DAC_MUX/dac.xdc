@@ -2,6 +2,14 @@
 set_property PACKAGE_PIN AG13     [get_ports "reset"] ;
 set_property IOSTANDARD  LVCMOS33 [get_ports "reset"] ;
 
+// SL DEMUX U1002
+// J4, LA11_P
+set_property PACKAGE_PIN AB6      [get_ports "mux_signals[7]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "mux_signals[7]"] ;
+// J4, LA07_N
+set_property PACKAGE_PIN U4       [get_ports "mux_signals[6]"] ;
+set_property IOSTANDARD  LVCMOS18 [get_ports "mux_signals[6]"] ;
+
 // BL DEMUX U1001
 // J4, LA07_P
 set_property PACKAGE_PIN U5       [get_ports "mux_signals[5]"] ;
