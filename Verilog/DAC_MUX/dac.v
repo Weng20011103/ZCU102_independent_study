@@ -95,7 +95,7 @@ module DAC7611P(
         endcase
     end
 
-    // LD_R	, dac_signals_15[1]
+    // LD_R	, dac_signals_4[1]
     // LD rise to 1 must before the first CLK rise 15 ns min
     // LD down to 0 must after the last CLK rise 10 ns min
     // LD Load Pulse Width 20 ns min
@@ -107,11 +107,11 @@ module DAC7611P(
         endcase
     end
 
-    // CLR_R, dac_signals_15[0]
+    // CLR_R, dac_signals_4[0]
     // CLR Clear Pulse Width 30 ns min
     always@(*) begin
         case(state)
-            10'd0: dac_signals_4[0] = ZERO;
+            10'd150: dac_signals_4[0] = ZERO;
             default: dac_signals_4[0] = ONE;
         endcase
     end
