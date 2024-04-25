@@ -1,6 +1,7 @@
 module DAC7611P(
     input  clk,     // clk is faster than DAC's CLK, clk = 2 * DAC's CLK
     input  reset,
+    output reg [5:0]mux_signals,
     output reg [3:0]dac_signals_15
 );
     parameter ZERO = 1'b0;
@@ -79,18 +80,18 @@ module DAC7611P(
     always@(*) begin
         case(state)
             10'd0: dac_signals_15[2] = ZERO;
-            10'd1, 10'd2, 10'd3, 10'd4: dac_signals_15[2] = ZERO; // D11, MSB
-            10'd5, 10'd6, 10'd7, 10'd8: dac_signals_15[2] = ONE; // D10
-            10'd9, 10'd10, 10'd11, 10'd12: dac_signals_15[2] = ZERO; // D9
-            10'd13, 10'd14, 10'd15, 10'd16: dac_signals_15[2] = ONE; // D8
-            10'd17, 10'd18, 10'd19, 10'd20: dac_signals_15[2] = ZERO; // D7
-            10'd21, 10'd22, 10'd23, 10'd24: dac_signals_15[2] = ONE; // D6
-            10'd25, 10'd26, 10'd27, 10'd28: dac_signals_15[2] = ZERO; // D5
-            10'd29, 10'd30, 10'd31, 10'd32: dac_signals_15[2] = ONE; // D4
-            10'd33, 10'd34, 10'd35, 10'd36: dac_signals_15[2] = ZERO; // D3
-            10'd37, 10'd38, 10'd39, 10'd40: dac_signals_15[2] = ONE; // D2
-            10'd41, 10'd42, 10'd44, 10'd45: dac_signals_15[2] = ZERO; // D1
-            10'd46, 10'd47, 10'd48, 10'd49: dac_signals_15[2] = ONE; // D0
+            10'd1, 10'd2, 10'd3, 10'd4: dac_signals_15[3] = ZERO; // D11, MSB
+            10'd5, 10'd6, 10'd7, 10'd8: dac_signals_15[3] = ONE; // D10
+            10'd9, 10'd10, 10'd11, 10'd12: dac_signals_15[3] = ZERO; // D9
+            10'd13, 10'd14, 10'd15, 10'd16: dac_signals_15[3] = ONE; // D8
+            10'd17, 10'd18, 10'd19, 10'd20: dac_signals_15[3] = ZERO; // D7
+            10'd21, 10'd22, 10'd23, 10'd24: dac_signals_15[3] = ONE; // D6
+            10'd25, 10'd26, 10'd27, 10'd28: dac_signals_15[3] = ZERO; // D5
+            10'd29, 10'd30, 10'd31, 10'd32: dac_signals_15[3] = ONE; // D4
+            10'd33, 10'd34, 10'd35, 10'd36: dac_signals_15[3] = ZERO; // D3
+            10'd37, 10'd38, 10'd39, 10'd40: dac_signals_15[3] = ONE; // D2
+            10'd41, 10'd42, 10'd44, 10'd45: dac_signals_15[3] = ZERO; // D1
+            10'd46, 10'd47, 10'd48, 10'd49: dac_signals_15[3] = ONE; // D0
             default: dac_signals_15[2] = ONE;
         endcase
     end
@@ -113,6 +114,14 @@ module DAC7611P(
         case(state)
             10'd0: dac_signals_15[0] = ZERO;
             default: dac_signals_15[0] = ONE;
+        endcase
+    end
+
+    // mux_signals
+    always@(*) begin
+        case(state)
+            10'd0: mux_signals = 6'b000000;
+            default: mux_signals = 6'b000010;
         endcase
     end
 endmodule
