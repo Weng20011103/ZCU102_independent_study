@@ -120,7 +120,7 @@ module DAC7611P(
     always@(*) begin
         case(state)
             10'd0: mux_signals = 8'b00000000;
-            10'd180, 10'd181: mux_signals = 8'b00000010;
+            10'd180, 10'd181: mux_signals = 8'b00100010;
             default: mux_signals = 8'b00000000;
         endcase
     end
