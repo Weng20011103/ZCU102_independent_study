@@ -9,6 +9,11 @@
 其中每一個`state`所佔時長為`50 ns`。  
 ![state.png](DAC_U1015/Figure_2.png "state.png")   
   
-# 測試結果  
+# 測試結果比較  
 ![DAC_U1004.png](DAC_U1004/Figure_1.png "DAC_U1004.png")  
-![DAC_U1015.png](DAC_U1015/Figure_1.png "DAC_U1015.png")   
+![DAC_U1015.png](DAC_U1015/Figure_1.png "DAC_U1015.png")  
+  
+# DAC U1015 測試結果  
+![scope_9.png](DAC_U1015/Figure_9.png "scope_9.png")  
+![scope_4.png](DAC_U1015/Figure_4.png "scope_4.png")  
+![scope_5.png](DAC_U1015/Figure_5.png "scope_5.png")  
