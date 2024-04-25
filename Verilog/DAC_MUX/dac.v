@@ -1,7 +1,7 @@
 module DAC7611P(
     input  clk,     // clk is faster than DAC's CLK, clk = 2 * DAC's CLK
     input  reset,
-    output reg [5:0]mux_signals,
+    output reg [7:0]mux_signals,
     output reg [3:0]dac_signals_4
 );
     parameter ZERO = 1'b0;
@@ -119,10 +119,9 @@ module DAC7611P(
     // mux_signals
     always@(*) begin
         case(state)
-            10'd0: mux_signals = 6'b000000;
-            10'd180, 10'd181: mux_signals = 6'b000010;
-            default: mux_signals = 6'b000000;
-            // default: mux_signals = 6'b000010;
+            10'd0: mux_signals = 8'b00000000;
+            10'd180, 10'd181: mux_signals = 8'b00000010;
+            default: mux_signals = 8'b00000000;
         endcase
     end
 endmodule
