@@ -6,10 +6,10 @@ module DAC7611P(
 );
     parameter ZERO = 1'b0;
     parameter ONE = 1'b1;
-    // CLK_R, dac_signals_15[3]	
-    // SDI_R, dac_signals_15[2]	
-    // LD_R	, dac_signals_15[1]	
-    // CLR_R, dac_signals_15[0]	
+    // CLK_R, dac_signals_4[3]	
+    // SDI_R, dac_signals_4[2]	
+    // LD_R	, dac_signals_4[1]	
+    // CLR_R, dac_signals_4[0]	
     reg [9:0] state;
     reg [9:0] nextstate;
 
