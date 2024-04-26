@@ -57,7 +57,9 @@ always@(*) begin
 end
 ```
 ![scope_9.png](DAC_U1004_MUX_EN/Figure_9.png "scope_9.png")  
-
+  
+![6_channels.png](DAC_U1004_MUX_EN/Figure_1_p.png "6_channels.png")  
+  
 # DAC U1015 測試結果  
 ![scope_4.png](DAC_U1015/Figure_4.png "scope_4.png")  
 ![scope_5.png](DAC_U1015/Figure_5.png "scope_5.png")  
