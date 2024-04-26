@@ -8,10 +8,10 @@
 每五百個`state`會重製一次，故週期為`25 μs`。  
 ```v
 always@(*) begin
-        case(state)
-            10'd499:  nextstate = 10'd0;
-            default: nextstate = state + 1'd1;
-        endcase
+    case(state)
+        10'd499:  nextstate = 10'd0;
+        default: nextstate = state + 1'd1;
+    endcase
 end
 ```
   
