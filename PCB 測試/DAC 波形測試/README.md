@@ -14,7 +14,10 @@
 ![DAC_U1015.png](DAC_U1015/Figure_1.png "DAC_U1015.png")  
   
 # DAC U1004 測試結果  
-![scope_5.png](DAC_U1004/Figure_5.png "scope_5.png") 
+![scope_5.png](DAC_U1004/Figure_5.png "scope_5.png")  
+  
+Channel 3 改觀測`mux_signals`中的`EN`訊號。  
+![scope_9.png](DAC_U1004_MUX_EN/Figure_9.png "scope_9.png")  
 
 # DAC U1015 測試結果  
 ![scope_9.png](DAC_U1015/Figure_2.png "scope_9.png")  
