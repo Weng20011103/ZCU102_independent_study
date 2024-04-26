@@ -1,7 +1,19 @@
 # DAC 波形測試  
 分別測試 PCB 板上`U1004 DAC`和`U1015 DAC`的波形。  
   
+輸入的訊號為`010101010101`，換算成電壓大約為`1.10 V`。  
+
 兩者使用相同`Vivado`專案但改變`DAC`腳位而已。  
+  
+每五百個`state`會重製一次，故週期為`25 μs`。  
+```v
+always@(*) begin
+        case(state)
+            10'd499:  nextstate = 10'd0;
+            default: nextstate = state + 1'd1;
+        endcase
+    end
+```
   
 # Vivado  
 輸入時鐘使用`20 MHz`，輸出至 DAC 的 CLK 頻率為 `5 MHz`。  
@@ -20,6 +32,5 @@ Channel 3 改觀測`mux_signals`中的`EN`訊號。
 ![scope_9.png](DAC_U1004_MUX_EN/Figure_9.png "scope_9.png")  
 
 # DAC U1015 測試結果  
-![scope_9.png](DAC_U1015/Figure_2.png "scope_9.png")  
 ![scope_4.png](DAC_U1015/Figure_4.png "scope_4.png")  
 ![scope_5.png](DAC_U1015/Figure_5.png "scope_5.png")  
