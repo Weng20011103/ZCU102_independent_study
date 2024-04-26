@@ -42,7 +42,7 @@ def plot_csv(data, data2):
     plt.gca().yaxis.grid(False, which='both')  # Only vertical lines
 
     plt.subplot(6, 1, 3)
-    plt.plot(time_values, LD_values, color='red', marker='o', markersize=0.1)
+    plt.plot(time_values, CLR_values, color='red', marker='o', markersize=0.1)
     plt.ylabel('Voltage (V)')
     plt.title('DAC CLR')
     plt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)  # Remove x-axis labels
