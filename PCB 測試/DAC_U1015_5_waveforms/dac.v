@@ -116,6 +116,14 @@ module DAC7611P(
         endcase
     end
 
-    assign clk_5MHz = clk;
+    reg [1:0] counter;
+    always@(posedge clk or posedge reset) begin
+        if(reset)
+            counter <= 2'd0;
+        else
+            counter <= counter + 1'd1;
+    end
+
+    assign clk_5MHz = counter[1];
 
 endmodule
