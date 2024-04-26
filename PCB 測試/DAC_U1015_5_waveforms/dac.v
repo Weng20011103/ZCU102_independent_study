@@ -117,6 +117,7 @@ module DAC7611P(
     end
 
     reg [1:0] counter;
+    
     always@(posedge clk or posedge reset) begin
         if(reset)
             counter <= 2'd0;
