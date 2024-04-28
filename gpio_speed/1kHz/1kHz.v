@@ -34,7 +34,7 @@ module counter(
             10'd1007:  data = 10'd1007;
             10'd1008:  data = 10'd1008;
             10'd1009:  data = 10'd1009;
-            10'd1010:  data = 10'd10010;
+            10'd1010:  data = 10'd1010;
             default: data = state;
         endcase
     end
