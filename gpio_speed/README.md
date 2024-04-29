@@ -68,7 +68,7 @@ data_10kHz[7] is 4409
 data_10kHz[8] is 4411
 data_10kHz[9] is 4413
 ```
-延遲有`2 ms`和`3 ms`不固定。  
+延遲有`0.2 ms`和`0.3 ms`不固定。  
   
 讀取加延遲`0.1 ms`。  
 ```python
