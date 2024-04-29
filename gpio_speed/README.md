@@ -132,3 +132,45 @@ data_100kHz[8] is 81598
 data_100kHz[9] is 81704
 ```
 延遲有`2.59 ms`、`1.11 ms`和`1.14 ms`。  
+  
+## 1 MHz 測試結果  
+直接讀取不加延遲。  
+```python
+for i in range (10):
+    print(f"data_1MHz[{i}] is", data_1MHz.read(0))
+```
+結果:  
+```text
+data_1MHz[0] is 456639
+data_1MHz[1] is 456844
+data_1MHz[2] is 457964
+data_1MHz[3] is 458155
+data_1MHz[4] is 460366
+data_1MHz[5] is 460562
+data_1MHz[6] is 460750
+data_1MHz[7] is 462559
+data_1MHz[8] is 463494
+data_1MHz[9] is 463684
+```
+延遲有`0.205 ms`、`1.12 ms`和`0.191 ms`。  
+  
+讀取加延遲`0.001 ms`。  
+```python
+for i in range (10):
+    print(f"data_1MHz[{i}] is", data_1MHz.read(0))
+    time.sleep(0.000001)
+```
+結果:  
+```text
+data_1MHz[0] is 324356
+data_1MHz[1] is 327083
+data_1MHz[2] is 328357
+data_1MHz[3] is 329399
+data_1MHz[4] is 330417
+data_1MHz[5] is 331439
+data_1MHz[6] is 332443
+data_1MHz[7] is 333440
+data_1MHz[8] is 334432
+data_1MHz[9] is 335448
+```
+延遲有`2.727 ms`、`1.018 ms`和`0.992 ms`。  
