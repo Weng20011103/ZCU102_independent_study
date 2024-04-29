@@ -90,3 +90,45 @@ data_10kHz[8] is 5098
 data_10kHz[9] is 5108
 ```
 延遲有`0.8 ms`、`2.3 ms`和`1.0 ms`。  
+  
+## 100 kHz 測試結果  
+直接讀取不加延遲。  
+```python
+for i in range (10):
+    print(f"data_100kHz[{i}] is", data_100kHz.read(0))
+```
+結果:  
+```text
+data_100kHz[0] is 44646
+data_100kHz[1] is 44694
+data_100kHz[2] is 44810
+data_100kHz[3] is 44829
+data_100kHz[4] is 44993
+data_100kHz[5] is 45012
+data_100kHz[6] is 45176
+data_100kHz[7] is 45196
+data_100kHz[8] is 45215
+data_100kHz[9] is 45234
+```
+延遲有`0.48 ms`、`1.16 ms`和`0.19 ms`。  
+  
+讀取加延遲`0.01 ms`。  
+```python
+for i in range (10):
+    print(f"data_100kHz[{i}] is", data_100kHz.read(0))
+    time.sleep(0.00001)
+```
+結果:  
+```text
+data_100kHz[0] is 80612
+data_100kHz[1] is 80871
+data_100kHz[2] is 80982
+data_100kHz[3] is 81096
+data_100kHz[4] is 81198
+data_100kHz[5] is 81296
+data_100kHz[6] is 81399
+data_100kHz[7] is 81496
+data_100kHz[8] is 81598
+data_100kHz[9] is 81704
+```
+延遲有`2.59 ms`、`1.11 ms`和`1.14 ms`。  
